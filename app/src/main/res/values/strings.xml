@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PT_Mytodolist</string>
+    <string name="SpinnerTaskPrompt">Select a category!</string>
+</resources>

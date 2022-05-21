@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/taskIcon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/taskName"
+        android:textSize="22sp"
+        android:textColor="#E91E63"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/taskIcon"
+        android:text="Task Name" />
+
+    <RatingBar
+        android:id="@+id/taskRating"
+        android:layout_width="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:isIndicator="true"
+        android:progressDrawable="@drawable/custom_rating_bar_star"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:layout_marginLeft="-30dp"
+        android:layout_toRightOf="@id/taskIcon" />
+
+    <EditText
+        android:id="@+id/taskCategory"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#E91E63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="Task Cat" />
+
+    <EditText
+        android:id="@+id/taskTime"
+        android:padding="3dp"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Time" />
+
+
+</RelativeLayout>

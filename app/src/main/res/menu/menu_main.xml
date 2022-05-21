@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addTask"
+        android:title="ADD"
+        android:icon="@drawable/add"
+        app:showAsAction="ifRoom"   >
+    </item>
+
+
+    <item
+        android:id="@+id/menu_sort"
+        android:title="Sort"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/menu_sort_name_AZ"
+                android:title="Name A-Z"/>
+            <item
+                android:id="@+id/menu_sort_name_ZA"
+                android:title="Name Z-A"/>
+            <item
+                android:id="@+id/menu_sort_priority_LH"
+                android:title="Priority H-L"/>
+            <item
+                android:id="@+id/menu_sort_priority_HL"
+                android:title="Priority L-H"/>
+
+        </menu>
+
+    </item>
+
+</menu>
